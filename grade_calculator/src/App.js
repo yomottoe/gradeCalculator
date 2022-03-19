@@ -1,9 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import Course from "./components/Course";
 
 function App() {
   return (
-    <div>This is a test</div>
+    <div>
+      <h1>This is one-page React JS web application.</h1>
+      <p>Have fun.</p>
+      <Course/>
+    </div>
   );
 }
 
