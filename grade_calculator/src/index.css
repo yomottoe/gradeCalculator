@@ -18,6 +18,7 @@ body {
 
 .assignment {
   background-color: white;
+  padding: 1%;
 }
 
 .course {
@@ -42,8 +43,11 @@ html {
   padding-right: 5%;
 }
 
-button.add {
+button {
   border: 0;
+}
+
+button.add {
   background-color: inherit;
 }
 
@@ -52,11 +56,19 @@ button.add:hover {
 }
 
 button.delete {
-  border: 0;
   background-color: inherit;
   float: right;
 }
 
 button.delete:hover {
   background-color: red;
+}
+
+button.minimize {
+  background-color: inherit;
+  float: right;
+}
+
+button.minimize:hover {
+  background-color: dimgray;
 }
