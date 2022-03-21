@@ -11,16 +11,52 @@ body {
   margin-left: 30%;
   margin-right: 30%;
   padding-top: 1%;
+  padding: 1%;
   font-family: 'Courier New', Courier, monospace;
+  background: white;
+}
+
+.assignment {
+  background-color: white;
+}
+
+.course {
+  background-color: white;
+  padding: 1%;
+}
+
+.listBody {
+  background-color: dimgray;
+  padding: 5% 2% 5% 2%;
 }
 
 html {
   background-color: aquamarine;
 }
 
-p.grade {
+.grade {
   color:dimgray;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   float: right;
-  font-size: inherit;
+  font-size: 0.75em;
+  padding-right: 5%;
+}
+
+button.add {
+  border: 0;
+  background-color: inherit;
+}
+
+button.add:hover {
+  background-color: green;
+}
+
+button.delete {
+  border: 0;
+  background-color: inherit;
+  float: right;
+}
+
+button.delete:hover {
+  background-color: red;
 }
