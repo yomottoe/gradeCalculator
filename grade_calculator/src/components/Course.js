@@ -10,13 +10,15 @@ function Course(props) {
         console.log("DEBUG: " + props.name + " minimize button was pressed.")
     }
 
+    function addAssignment() {
+        console.log("DEBUG: " + props.name + " attempted to add another assignment.")
+    }
+
     return(
         <div class="course">
             <h2>{props.name}<button class="delete" onClick={deleteHandler}>x</button><button class="minimize" onClick={minimizeHandler}>-</button><span class="grade">XX.XX</span></h2>
-            <div class="listBody">
-                <Assignment name="Another Test" />
-            </div>
-            <button class="add">+</button>
+            <div class="listBody"></div>
+            <button class="add" onClick={addAssignment}>+</button>
         </div>
     );
 }
