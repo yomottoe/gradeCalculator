@@ -15,10 +15,10 @@ function Course(props) {
     }
 
     return(
-        <div class="course">
-            <h2>{props.name}<button class="delete" onClick={deleteHandler}>x</button><button class="minimize" onClick={minimizeHandler}>-</button><span class="grade">XX.XX</span></h2>
-            <div class="listBody"></div>
-            <button class="add" onClick={addAssignment}>+</button>
+        <div className="course">
+            <h2>{props.name}<button className="delete" onClick={deleteHandler}>x</button><button className="minimize" onClick={minimizeHandler}>-</button><span className="grade">XX.XX</span></h2>
+            <div className="listBody"></div>
+            <button className="add" onClick={addAssignment}>+</button>
         </div>
     );
 }

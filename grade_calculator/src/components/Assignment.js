@@ -9,8 +9,8 @@ function Assignment(props) {
     }
 
     return(
-        <div class="assignment">
-            <h3>{props.name}<button class="delete" onClick={deleteHandler}>x</button><button class="minimize" onClick={minimizeHandler}>-</button><span class="grade">XX/XX</span></h3>
+        <div className="assignment">
+            <h3>{props.name}<button className="delete" onClick={deleteHandler}>x</button><button className="minimize" onClick={minimizeHandler}>-</button><span className="grade">XX/XX</span></h3>
             <p></p>
         </div>
     );
