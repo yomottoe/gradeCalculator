@@ -1,5 +1,3 @@
-import Assignment from "./Assignment";
-
 function Course(props) {
 
     function deleteHandler() {
