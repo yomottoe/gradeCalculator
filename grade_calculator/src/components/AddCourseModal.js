@@ -12,8 +12,10 @@ function AddCourseModal(props) {
                 <h2>Add Course<button className="delete" onClick={props.onClick}>x</button></h2>
 
                 <form onSubmit={submitForm}>
-                    <label HTMLfor="name">Course Name</label>
-                    <input type="text" required id="name"></input>
+                    <div>
+                        <label HTMLfor="name">Course Name</label>
+                        <input type="text" required id="name"></input>
+                    </div>
                     <button>Add Course</button>
                 </form>
 

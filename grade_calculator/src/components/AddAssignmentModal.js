@@ -14,12 +14,14 @@ function AddAssignmentModal(props) {
                 <h2>Add Assignment<button className="delete" onClick={props.onClick}>x</button></h2>
 
                 <form onSubmit={submitForm}>
-                    <label HTMLfor="name">Assignment Name</label>
-                    <input type="text" required id="name"></input>
-
-                    <label HTMLfor="grade">Grade</label>
-                    <input type="text" required id="grade"></input>
-
+                    <div>
+                        <label HTMLfor="name">Assignment Name</label>
+                        <input type="text" required id="name"></input>
+                    </div>
+                    <div>
+                        <label HTMLfor="grade">Grade</label>
+                        <input type="text" required id="grade"></input>
+                    </div>
                     <button>Add Assignment</button>
                 </form>
 
