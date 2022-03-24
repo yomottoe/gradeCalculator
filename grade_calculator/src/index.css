@@ -8,8 +8,8 @@ h2 {
 }
 
 body {
-  margin-left: 30%;
-  margin-right: 30%;
+  width: 1000px;
+  margin: 1% auto;
   padding-top: 1%;
   padding: 1%;
   font-family: 'Courier New', Courier, monospace;
@@ -67,11 +67,11 @@ div.backdrop {
 
 button {
   border: 0;
-  border-radius: 50%;
 }
 
 button.add {
   background-color: inherit;
+  border-radius: 50%;
 }
 
 button.add:hover {
@@ -81,6 +81,7 @@ button.add:hover {
 button.delete {
   background-color: inherit;
   float: right;
+  border-radius: 50%;
 }
 
 button.delete:hover {
@@ -90,6 +91,7 @@ button.delete:hover {
 button.minimize {
   background-color: inherit;
   float: right;
+  border-radius: 50%;
 }
 
 button.minimize:hover {
