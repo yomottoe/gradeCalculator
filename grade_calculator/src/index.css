@@ -14,21 +14,25 @@ body {
   padding: 1%;
   font-family: 'Courier New', Courier, monospace;
   background: white;
+  border-radius: 10px;
 }
 
 .assignment {
   background-color: white;
   padding: 1%;
+  border-radius: 10px;
 }
 
 .course {
   background-color: white;
   padding: 1%;
+  border-radius: 10px;
 }
 
 .listBody {
   background-color: dimgray;
   padding: 5% 2% 5% 2%;
+  border-radius: 10px;
 }
 
 html {
@@ -43,8 +47,18 @@ html {
   padding-right: 5%;
 }
 
+div.modal {
+  z-index: 1;
+  margin: auto;
+  width: auto;
+  padding: 1%;
+  background-color: white;
+  border-radius: 10px;
+}
+
 button {
   border: 0;
+  border-radius: 50%;
 }
 
 button.add {
