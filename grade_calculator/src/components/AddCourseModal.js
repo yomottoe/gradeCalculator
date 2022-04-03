@@ -1,9 +1,12 @@
 import { useState } from "react";
+import { useRef } from "react";
 
 function AddCourseModal(props) {
+    const courseNameRef = useRef();
+
     function submitForm(event) {
         event.preventDefault();
-        console.log("DEBUG: Submitting form....")
+        console.log("DEBUG: Submitting form....");
     }
 
     return(

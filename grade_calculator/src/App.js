@@ -5,11 +5,17 @@ import AddCourseModal from "./components/AddCourseModal";
 function App() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
+  /**
+   * Adds a new course to the list of courses on the app. Opens a modal to prompt the user to enter information about the new course.
+   */
   function addCourse() {
     console.log("DEBUG: adding course...")
     setModalIsOpen(true);
   }
 
+  /**
+   * Closes the modal that is used to prompt the user for a new course. Occurs when the exit button on the modal is pressed
+   */
   function closeHandler() {
     console.log("DEBUG: closing course add window");
     setModalIsOpen(false);

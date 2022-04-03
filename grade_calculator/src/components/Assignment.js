@@ -1,9 +1,15 @@
 function Assignment(props) {
 
+    /**
+     * Deletes an assignment from a course. Prompts a modal to confirm that the user wants to delete the assignment.
+     */
     function deleteHandler() {
         console.log("DEBUG: " + props.name + " delete button was pressed.")
     }
 
+    /**
+     * Minimizes an assignment.
+     */
     function minimizeHandler() {
         console.log("DEBUG: " + props.name + " minimize button was pressed.")
     }

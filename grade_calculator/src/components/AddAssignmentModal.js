@@ -1,9 +1,14 @@
 import { useState } from "react";
+import { useRef } from "react";
 
 function AddAssignmentModal(props) {
+    const assignmentNameRef = useRef();
+    // The method of choosing a grade for an assignment has not been determined. The prompt in the form is just a placeholder.
+    const assignmentGradeRef = useRef();
+
     function submitForm(event) {
         event.preventDefault();
-        console.log("DEBUG: Submitting form...")
+        console.log("DEBUG: Submitting form...");
 
         
     }
