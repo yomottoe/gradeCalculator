@@ -7,6 +7,14 @@ function AddCourseModal(props) {
     function submitForm(event) {
         event.preventDefault();
         console.log("DEBUG: Submitting form....");
+
+        const enteredName = courseNameRef.current.value;
+
+        const userInput = {
+            name: enteredName
+        };
+
+        props.onAdd(userInput);
     }
 
     return(
@@ -17,7 +25,7 @@ function AddCourseModal(props) {
                 <form onSubmit={submitForm}>
                     <div>
                         <label HTMLfor="name">Course Name</label>
-                        <input type="text" required id="name"></input>
+                        <input type="text" required id="name" ref={courseNameRef}></input>
                     </div>
                     <button>Add Course</button>
                 </form>

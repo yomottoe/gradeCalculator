@@ -6,9 +6,17 @@ function App() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   /**
-   * Adds a new course to the list of courses on the app. Opens a modal to prompt the user to enter information about the new course.
+   * Adds a new course under the course listing in the app.
    */
-  function addCourse() {
+  function addCourse(data) {
+    
+    // somehow find a way to add another course under the course list
+  }
+
+  /**
+   * Opens the modal to prompt the user for information about a new course to be added.
+   */
+  function openModal() {
     console.log("DEBUG: adding course...")
     setModalIsOpen(true);
   }
@@ -16,7 +24,7 @@ function App() {
   /**
    * Closes the modal that is used to prompt the user for a new course. Occurs when the exit button on the modal is pressed
    */
-  function closeHandler() {
+  function closeModal() {
     console.log("DEBUG: closing course add window");
     setModalIsOpen(false);
   }
@@ -26,9 +34,8 @@ function App() {
       <h1>This is one-page React JS web application.</h1>
       <p>[Insert here a brief description of the application and how to use it, maybe turn this into something that can be hidden on the page]</p>
       <div className="listBody">
-        <Course name="Testing"/>
-        <button className="add" onClick={addCourse}>+</button>
-        {modalIsOpen && <AddCourseModal onClick={closeHandler}/>}
+        <button className="add" onClick={openModal}>+</button>
+        {modalIsOpen && <AddCourseModal onClick={closeModal} onAdd={addCourse}/>}
       </div>
     </div>
   );

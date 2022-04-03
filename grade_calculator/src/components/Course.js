@@ -5,6 +5,13 @@ function Course(props) {
     const [modalIsOpen, setModalIsOpen] = useState(false);
 
     /**
+     * Adds an assignment under the current course. Is called when the app detects user input in the "Add Assignment" modal
+     */
+    function addAssignment(data) {
+        // somehow find a way to create a new assignment under the parent course
+    }
+
+    /**
      * Deletes the current course from the list of courses. Prompts a modal to confirm the user wants to delete.
      */
     function deleteHandler() {
@@ -19,9 +26,9 @@ function Course(props) {
     }
 
     /**
-     * Adds an assignment to the course. Prompts a modal for the user to enter information about the assignment.
+     * Opens the modal to add an assignment, prompts the user for information about the new assignment.
      */
-    function addAssignment() {
+    function openModal() {
         console.log("DEBUG: " + props.name + " attempted to add another assignment.");
         setModalIsOpen(true);
     }
@@ -38,8 +45,8 @@ function Course(props) {
         <div className="course">
             <h2>{props.name}<button className="delete" onClick={deleteHandler}>x</button><button className="minimize" onClick={minimizeHandler}>-</button><span className="grade">XX.XX</span></h2>
             <div className="listBody"></div>
-            <button className="add" onClick={addAssignment}>+</button>
-            {modalIsOpen && <AddAssignmentModal onClick={closeModal}/>}
+            <button className="add" onClick={openModal}>+</button>
+            {modalIsOpen && <AddAssignmentModal onClick={closeModal} onAdd={addAssignment}/>}
         </div>
     );
 }

@@ -17,7 +17,7 @@ function Assignment(props) {
     return(
         <div className="assignment">
             <h3>{props.name}<button className="delete" onClick={deleteHandler}>x</button><button className="minimize" onClick={minimizeHandler}>-</button><span className="grade">XX/XX</span></h3>
-            <p></p>
+            <p id="notes"></p>
         </div>
     );
 }

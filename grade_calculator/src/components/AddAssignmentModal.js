@@ -10,7 +10,16 @@ function AddAssignmentModal(props) {
         event.preventDefault();
         console.log("DEBUG: Submitting form...");
 
+        const enteredName = assignmentNameRef.current.value;
+        const enteredGrade = assignmentGradeRef.current.value;
+
+        // figure out a way to organize and pass the data above into the function... that would allow you to save the data as a JSON string? for local storage?
+        const userInput = {
+            name: enteredName,
+            grade: enteredGrade
+        };
         
+        props.onAdd(userInput);
     }
 
     return(
@@ -21,11 +30,11 @@ function AddAssignmentModal(props) {
                 <form onSubmit={submitForm}>
                     <div>
                         <label HTMLfor="name">Assignment Name</label>
-                        <input type="text" required id="name"></input>
+                        <input type="text" required id="name" ref={assignmentNameRef}></input>
                     </div>
                     <div>
                         <label HTMLfor="grade">Grade</label>
-                        <input type="text" required id="grade"></input>
+                        <input type="text" required id="grade" ref={assignmentGradeRef}></input>
                     </div>
                     <button>Add Assignment</button>
                 </form>
